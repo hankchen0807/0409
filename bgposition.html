@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>圖片展示</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", sans-serif;
+      background: linear-gradient(to bottom right, #fcefee, #e6f0ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 40px;
+      width: 85%;
+      max-width: 1000px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .images {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .images img {
+      width: 450px; /* 原本是 150px，這裡加大 */
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: left;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>井仔腳瓦盤鹽田</h2>
+    <div class="images">
+      <img src="2021-09-02.png" alt="左圖">
+      <img src="2.jfif" alt="右圖"> <!-- 替代圖 -->
+    </div>
+    <p>北門井仔腳瓦盤鹽田位於臺灣臺南市北門區永華里，於民國九十八年8月24日公告為歷史建築，
+        是屬於北門鹽場的鹽田。該鹽田在清朝是稱為「瀨東場」，
+        不過已經是第三代的鹽場，其在2000年廢曬時有182年歷史，
+        為臺灣現存歷史最悠久的鹽田。原本該鹽田已隨著北門鹽場廢曬而閒置，
+        但後來為了觀光而重新復曬。
+    </p>
+  </div>
+</body>
+</html>

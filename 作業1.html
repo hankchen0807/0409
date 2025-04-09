@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>玫瑰花語</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: "微軟正黑體", sans-serif;
+      background: linear-gradient(to right, #ffd1f7, #c7b8f5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      width: 850px;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(255, 255, 255, 0.3); /* 半透明白色背景 */
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(12px); /* 模糊效果 */
+      -webkit-backdrop-filter: blur(12px); /* Safari 相容 */
+    }
+
+    .text {
+      width: 60%;
+      font-size: 20px;
+      color: #333;
+      line-height: 2;
+      text-align: center;
+    }
+
+    .img-left, .img-right {
+      width: 150px;
+      height: auto;
+    }
+
+    .img-right {
+      width: 150px;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text {
+        width: 100%;
+        margin: 20px 0;
+      }
+
+      .img-left, .img-right {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="玫瑰花.png" alt="紅玫瑰" class="img-left">
+    
+    <div class="text">
+      玫瑰花的花語，廣泛而言，代表的是愛情、愛與美、容光煥發之意涵。<br>
+      另外，不同顏色、不同朵數的玫瑰都有獨特的花語涵義，例如：<br>
+      <strong>紅玫瑰花語</strong>：熱戀、熱情、真心真意。<br>
+      <strong>粉玫瑰花語</strong>：初戀、求愛、愛心、特別的關懷。
+    </div>
+
+    <img src="d11a497bdde2c1fba393231aed5e0582_thumb.png" alt="粉玫瑰" class="img-right">
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+

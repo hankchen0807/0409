@@ -1,0 +1,111 @@
+<!--
+檔案名稱：index.html
+說明：導覽首頁，提供使用者選擇進入各個作業子頁面。採用科技風格設計，包含滑入動畫、霓虹按鈕、玻璃背景與頁尾資訊。
+製作者：陳嘉翰
+學號：5B3G0041
+-->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第八周作業查詢</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 40px;
+      margin-top: 60px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      animation: fadeIn 1.5s ease-out;
+    }
+    h1 {
+      font-size: 48px;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 20px;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 18px;
+      color: #fff;
+      background: linear-gradient(135deg, #1f8ef1, #5f72ff);
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px rgba(95, 114, 255, 0.6);
+    }
+    .button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(95, 114, 255, 0.9);
+    }
+    .info-box {
+      background-color: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 20px;
+      border-radius: 15px;
+      color: #eee;
+      margin-top: 30px;
+      font-size: 16px;
+      text-align: left;
+    }
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+      padding: 10px 0;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>第八周作業查詢</h1>
+    <p>姓名：陳嘉翰 ｜ 學號：5B3G0041</p>
+    <a href="作業1.html" class="button">作業1</a>
+    <a href="練習1.html" class="button">練習1</a>
+    <a href="bgposition.html" class="button">井仔腳瓦盤鹽田</a>
+
+
+    <div class="info-box">
+      <h3>📄 作業內容簡述</h3>
+      <ul>
+        <li><strong>作業1.html</strong>：今天的作業，應用css背景，中間背景顏色使用放射漸層功能，加上2張圖片放在左右。</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    © 2025/04/09 ｜ 第八周網頁設計作業
+  </footer>
+</body>
+</html>
+
+
